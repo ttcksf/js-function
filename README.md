@@ -17,7 +17,7 @@
 ## switch
 - switch文について
 
-## loop.js
+## loop
 - for文について
 
 ## rondom-bg.js
