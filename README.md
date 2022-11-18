@@ -1,6 +1,6 @@
 # js-function
 
-## variables.js
+## variables
 - 変数について
 
 ## constant.js
