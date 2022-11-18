@@ -11,7 +11,7 @@
 - デフォルト引数
 - 引数の個数が不定期
 
-## arrow^function.js
+## arrow-function
 - アロー関数について
 
 ## switch
