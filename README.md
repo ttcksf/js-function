@@ -3,7 +3,7 @@
 ## variables
 - 変数について
 
-## constant.js
+## constant
 - 定数について
 
 ## function
@@ -14,7 +14,7 @@
 ## arrow^function.js
 - アロー関数について
 
-## switch.js
+## switch
 - switch文について
 
 ## loop.js
