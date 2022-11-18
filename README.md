@@ -20,9 +20,9 @@
 ## loop
 - for文について
 
-## rondom-bg.js
+## rondom-bg
 - ランダムな背景を出力する(`random-bg.css`,`style.css`)
 - パスワードに使う乱数
 
-## arc-animation.js
+## arc-animation
 - 円弧アニメーション（`arc-animation.css`,`photo.css`）
