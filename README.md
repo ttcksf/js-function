@@ -6,7 +6,7 @@
 ## constant.js
 - 定数について
 
-## function.js
+## function
 - 関数について
 - デフォルト引数
 - 引数の個数が不定期
