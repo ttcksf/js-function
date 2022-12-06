@@ -6,6 +6,6 @@ textarea.addEventListener("keyup",onkeyup);
 
 function onkeyup(){
   const inputText = textarea.value;
-  // string_num.innerHTML = inputText.length;
-  string_num.innerHTML = Array.from(inputText).length;
+  string_num.innerHTML = inputText.length;
+  // string_num.innerHTML = Array.from(inputText).length;
 }
