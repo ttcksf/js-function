@@ -1,7 +1,7 @@
-// const text1 = "おはよう";
-// const text2 = "ございます";
-// console.log(text1 + text2);
-// console.log(`${text1}${text2}`);
+const text1 = "おはよう";
+const text2 = "ございます";
+console.log("おはよう" + text2);
+console.log(`${text1}${text2}`);
 
 const familyName = document.querySelector("#family");
 
@@ -17,5 +17,5 @@ function keyup(){
   const familyNameValue = familyName.value;
   const firstNameValue = firstName.value;
 
-  fullName.innerHTML = `${familyNameValue}${firstNameValue}`;
+  fullName.innerHTML = `${familyNameValue}　${firstNameValue}`;
 }
