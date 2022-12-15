@@ -11,24 +11,20 @@ const students = [
   {id: 0003, name: "橋本"},
 ];
 const searchInput = document.querySelector("#search-input");
-console.log(searchInput);
 const searchResult = document.querySelector("#search-result");
 
-searchInput.addEventListener("keyup", () => {
-  const studentId = Number(event.target.value);
+searchInput.addEventListener("keyup", (e) => {
+  const studentId = Number(e.target.value);
   console.log(studentId);
   findStudent(studentId);
 });
 
 function findStudent(studentId){
-  const data = students.find((data) => {
-    data.id === studentId;
+  const results = students.find((data) => data.id === studentId);
+  if(results == null){
+    searchResult.textContent = "なし";
+    return;
+  }
 
-    if(data == null){
-      searchResult.textContent = "なし";
-      return;
-    }
-
-    searchResult.textContent = data.name;
-  })
+  searchResult.textContent = results.name;
 }
