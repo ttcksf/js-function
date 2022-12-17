@@ -15,7 +15,6 @@ const searchResult = document.querySelector("#search-result");
 
 searchInput.addEventListener("keyup", (e) => {
   const studentId = Number(e.target.value);
-  console.log(studentId);
   findStudent(studentId);
 });
 
@@ -25,6 +24,7 @@ function findStudent(studentId){
     searchResult.textContent = "なし";
     return;
   }
-
+  //こちらの1行を追加
+  console.log(results);
   searchResult.textContent = results.name;
 }

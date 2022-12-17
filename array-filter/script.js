@@ -1,15 +1,18 @@
 // let array = [1,2,3,4,5];
 
 // array = array.filter((num) => num > 2);
+// array = array.filter((num) => {
+//   return num > 2;
+// });
 
 // console.log(array);
 
 const newsList = [
-  {title: "aaa", year: 2019},
-  {title: "bbb", year: 2020},
-  {title: "ccc", year: 2019},
-  {title: "ddd", year: 2021},
-  {title: "eee", year: 2019},
+  {title: "ニュース1です", year: 2019},
+  {title: "ニュース2です", year: 2020},
+  {title: "ニュース3です", year: 2019},
+  {title: "ニュース4です", year: 2021},
+  {title: "ニュース5です", year: 2019},
 ];
 
 document.querySelectorAll(".btn").forEach((data) => {
