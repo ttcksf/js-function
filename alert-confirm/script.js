@@ -1,11 +1,11 @@
-const btn = document.querySelector("button");
+// const btn = document.querySelector("button");
 
-btn.addEventListener("click", (e) => {
-  // alert("クリックされました");
-  const log = alert("クリックされました");
-  //undefinedが返される
-  document.querySelector(".result").innerHTML = log;
-});
+// btn.addEventListener("click", (e) => {
+//   // alert("クリックされました");
+//   const log = alert("クリックされました");
+//   //undefinedが返される
+//   document.querySelector(".result").innerHTML = log;
+// });
 
 // const btn = document.querySelector("button");
 
@@ -14,3 +14,9 @@ btn.addEventListener("click", (e) => {
 //   // trueかfalseが返される
 //   document.querySelector(".result").innerHTML = log;
 // });
+
+const btn = document.querySelector("button");
+btn.addEventListener("click", (e) => {
+  const pass = prompt("パスワードを入力してください","");
+  document.querySelector(".result").innerHTML = pass;
+})
