@@ -1,0 +1,22 @@
+/* .container {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all 5s;
+}
+.container.show {
+  transform: scale(5);
+} */
+/* .btn {
+  width: 200px;
+  font-size: 32px;
+} */
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all 0.5s;
+}
+.container:hover {
+  transform: scale(1.3);
+}

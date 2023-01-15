@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+}
+.box {
+  position: absolute;
+  width: 500px;
+  height: 1000px;
+  background-color: red;
+  transition: all 1s;
+}
+.box.show {
+  transform: translate(-500px, 0);
+}
+.btn {
+  width: 100px;
+  height: 100px;
+}
