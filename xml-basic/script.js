@@ -33,6 +33,7 @@ xml.addEventListener("load", (e) => {
 xml.open("get", "./test.txt");
 
 btn.addEventListener("click", () => {
+  // ネットワークを３Gにして履歴を削除しておく
   // 実行
   xml.send();
 });
