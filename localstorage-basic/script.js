@@ -1,7 +1,8 @@
 const container = document.querySelector("#container");
+const inputForm = document.querySelector("#inputForm");
 const saveBtn = document.querySelector("#saveBtn");
 const backBtn = document.querySelector("#backBtn");
-const inputForm = document.querySelector("#inputForm");
+const deleteBtn = document.querySelector("#deleteBtn");
 
 saveBtn.addEventListener("click", () => {
   const inputData = inputForm.value;
@@ -16,4 +17,13 @@ backBtn.addEventListener("click", () => {
   inputForm.value = savedData;
 });
 
+deleteBtn.addEventListener("click", () => {
+  localStorage.removeItem("key1");
+});
+// deleteBtn.addEventListener("click", () => {
+//   localStorage.clear();
+// });
+
 // ブラウザを閉じても残る（制限はない。sessionStorageを使うと期限を設定できる）
+// 履歴はキーをそえろえれば上書きできる
+// 削除は手動でも可能
