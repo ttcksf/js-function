@@ -8,13 +8,10 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <script type="module">
-      import data from "./data.json" assert { type: "json" };
-      console.log(data);
-      // console.log(data.name);
-      // console.log(data.brother[0].name);
-      // const resultData = JSON.parse(data);
-      // console.log(resultData);
-    </script>
+    <div class="container">
+      <input type="text" id="inputForm" />
+      <button id="saveBtn">保存</button>
+      <button id="backBtn">1個前の入力内容に戻る</button>
+    </div>
   </body>
 </html>

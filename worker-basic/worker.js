@@ -9,6 +9,7 @@ onmessage = (e) => {
     total += 1;
   }
   // 3.
+  console.log("workerでのtotal: ", total);
   console.log("結果を送信");
   postMessage(total);
 };

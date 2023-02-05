@@ -5,7 +5,7 @@ const json = `{ "id": "0001", "name": "AAA", "age": 20 }`;
 // console.log(json.id);
 const parsed = JSON.parse(json);
 // console.log(parsed);
-// console.log(parsed.name);
+// console.log(parsed.id);
 
 const data = {
   id: "0001",
@@ -14,4 +14,4 @@ const data = {
 };
 // const jsonData = JSON.stringify(data);
 const jsonData = JSON.stringify(data, null, " ");
-console.log(jsonData);
+// console.log(jsonData);

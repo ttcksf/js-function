@@ -28,11 +28,19 @@
 // }
 // fetchData();
 
-fetch("../images/image.png")
-  .then((data) => data.blob())
-  .then((res) => {
-    const image = new Image();
-    console.log(image);
-    // image.src = URL.createObjectURL(res);
-    // document.body.appendChild(image);
-  });
+// fetch("../images/image.png")
+//   .then((data) => data.blob())
+//   .then((res) => {
+//     const image = new Image();
+//     image.src = URL.createObjectURL(res);
+//     document.body.appendChild(image);
+//   });
+
+async function fetchImg() {
+  const data = await fetch("../images/image.png");
+  const res = await data.blob();
+  const image = new Image();
+  image.src = URL.createObjectURL(res);
+  document.body.appendChild(image);
+}
+fetchImg();
