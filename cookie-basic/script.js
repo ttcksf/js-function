@@ -19,8 +19,8 @@ function converter(cookie) {
   // console.log(cookie);
   // ;を削除して配列にする
   cookie = cookie.split(";");
-  // console.log(cookie);
   const obj = {};
+  // console.log(cookie);
 
   cookie.map((item) => {
     const elem = item.split("=");

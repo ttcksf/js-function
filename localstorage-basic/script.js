@@ -6,19 +6,19 @@ const deleteBtn = document.querySelector("#deleteBtn");
 
 saveBtn.addEventListener("click", () => {
   const inputData = inputForm.value;
-  // console.log(inputData);
-  localStorage.setItem("key1", inputData);
+  console.log(inputData);
+  localStorage.setItem("add", inputData);
   inputForm.value = "";
 });
 
 backBtn.addEventListener("click", () => {
-  const savedData = localStorage.getItem("key1");
+  const savedData = localStorage.getItem("key");
   // console.log(savedData);
   inputForm.value = savedData;
 });
 
 deleteBtn.addEventListener("click", () => {
-  localStorage.removeItem("key1");
+  localStorage.removeItem("key");
 });
 // deleteBtn.addEventListener("click", () => {
 //   localStorage.clear();
