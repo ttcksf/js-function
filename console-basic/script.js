@@ -1,6 +1,6 @@
-console.time();
-console.log("コンソールログです");
-console.error("コンソールエラーです");
+// console.time();
+console.log("console.log: ", "エラーです");
+console.error("console.error: ", "エラーです");
 
 const data = {
   id: "0001",
@@ -24,14 +24,16 @@ const array = [
     age: 21,
   },
 ];
-const container = document.querySelector(".container");
-console.log(data);
-console.dir(data);
-console.dir(container);
-
 console.table(data);
-console.table(array);
-console.timeEnd();
+
+const container = document.querySelector(".container");
+// console.log(data);
+// console.dir(data);
+// console.log(container);
+// console.dir(data);
+
+// console.table(data);
+// console.timeEnd();
 
 console.time();
 for (let i = 0; i < 100; i++) {
