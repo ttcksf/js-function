@@ -1,4 +1,10 @@
 const array = [1, 2, 3, 4];
+// const data = {
+//   id: "0001",
+//   name: "AAA",
+//   age: 20,
+// };
+// console.log(data);
 // console.log(array);
 // console.dir(array);
 
@@ -31,7 +37,7 @@ const push = Symbol();
 Array.prototype[push] = function (val) {
   console.log(val);
 };
-console.dir(array);
+// console.dir(array);
 array[push](5);
 array.push(5);
 console.log(array);

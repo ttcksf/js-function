@@ -25,14 +25,17 @@ class Test {
   //   console.log("hello");
   //   return "aaa";
   // }
-  // constructor() {
-  //   console.log("初期化");
-  //   this.author = "山田";
-  // }
-  // hello() {
-  //   console.log("hello");
-  //   return this.author;
-  // }
+  constructor() {
+    console.log("初期化");
+    this.author = "山田";
+  }
+  hello() {
+    console.log("hello");
+    return this.author;
+  }
+  static staticHello() {
+    console.log(this.author);
+  }
   // ④
   // constructor() {
   //   console.log("初期化");
@@ -42,18 +45,19 @@ class Test {
   //   console.log("hello");
   // }
   // ⑤
-  constructor() {
-    console.log("初期化");
-    this.author = "山田";
-  }
-  hello() {
-    console.log("hello");
-  }
+  // constructor() {
+  //   console.log("初期化");
+  //   this.author = "山田";
+  // }
+  // hello() {
+  //   console.log("hello");
+  // }
 }
 // ⑤
 class CopyTest extends Test {
   constructor() {
     super();
+    // console.log(this);
   }
   copyHello() {
     super.hello();
@@ -82,12 +86,15 @@ class CopyTest extends Test {
 // ④
 // staticで宣言したメソッドはクラスをインスタンス化しなくても使える。クラス内の変数やコンストラクターに影響されないものが対象
 // staticで宣言したメソッドはインスタンス化では使えない
-// Test.hello();
+// Test.staticHello();
 // let test = new Test();
 // console.log(test.hello());
 
 // ⑤
 // クラスを継承するときはextendsを使ってコンストラクターをsuper()にする
 // 継承元のメソッドを使う時にはsuper.メソッド()とする
-// let copy = new CopyTest();
-// console.log(copy.copyHello());
+let copy = new CopyTest();
+console.log(copy.copyHello());
+
+let now = new Date();
+console.log(now.getFullYear());
