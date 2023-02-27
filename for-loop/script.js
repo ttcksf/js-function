@@ -1,3 +1,4 @@
+const array = ["AAA", "BBB", "CCC"];
 // インデックス番号を使って繰り返す条件は自分で決める時
 // forだけだとオブジェクトには使えない
 
@@ -43,7 +44,6 @@ array.forEach((item, i) => {
   console.log(`${item},${i}`);
 });
 
-const array = ["AAA", "BBB", "CCC"];
 array.forEach((item, i) => {
   if (i < 1) {
     console.log(item);
